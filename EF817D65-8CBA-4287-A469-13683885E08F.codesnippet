@@ -6,30 +6,18 @@
 	<string>snippet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark NSCoding
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        &lt;# implementation #&gt;
-    }
-    
-    return self;
-}
-
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    &lt;# implementation #&gt;
-}</string>
+	<string>NSAssert2(![NSThread isMainThread], @"%@: %@ must not be called on main thread!", [self class], NSStringFromSelector(_cmd));</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DD8D9F98-AAFD-40FF-A6D1-4BADB686541B</string>
+	<string>EF817D65-8CBA-4287-A469-13683885E08F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Placeholder for NSCoding protocol methods</string>
+	<string>Assertion for call on non-main thread </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSCoding Protocol Methods</string>
+	<string>Assert Non-Main Thread</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
